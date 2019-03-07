@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container-contact100" dir="rtl">
+    <div class="wrap-contact100">
+        <p>سامانه داوری مسابقات ICT Challenge دانشگاه صنعتی شریف</p>
+        <form class="contact100-form validate-form" action="/rest/jet/ict/challenge/answer" method="POST" enctype="multipart/form-data">
+				<span class="contact100-form-title">
+					ارسال فایل
+				</span>
+
+            <div class="wrap-input100 validate-input" data-validate="نام کاربری ضروری است">
+                <span class="label-input100">نام کاربری</span>
+                <input class="input100" type="text" name="username" placeholder="نام کاربری را وارد نمایید">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="رمز عبور ضروری است">
+                <span class="label-input100">رمز عبور</span>
+                <input class="input100" type="password" name="password" placeholder="رمز عبور را وارد نمایید">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="کد تیم ضروری است">
+                <span class="label-input100">کد تیم</span>
+                <input class="input100" type="text" name="team_code" placeholder="کد تیم را وارد نمایید">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="نام تیم ضروری است">
+                <span class="label-input100">نام تیم</span>
+                <input class="input100" type="text" name="team_name" placeholder="نام تیم را وارد نمایید">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="کد سوال ضروری است">
+                <span class="label-input100">کد سوال</span>
+                <input class="input100" type="text" name="question_code" placeholder="کد سوال را وارد نمایید">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 input100-select">
+                <span class="label-input100">کد چالش</span>
+                <div>
+                    <select class="selection-2 select2-hidden-accessible" name="challenge_code" tabindex="-1" aria-hidden="true">
+                        <option>java</option>
+                        <option>net</option>
+                        <option>php</option>
+                        <option>python</option>
+                        <option>image</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="rtl" style="width: 71px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-challenge_code-ck-container"><span class="select2-selection__rendered" id="select2-challenge_code-ck-container" title="java">java</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="ارسال فایل ضروری است">
+                <span class="label-input100">فایل</span>
+                <input type="file" class="input100" name="file" placeholder="فایل خود را انتخاب کنید">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+							<span>
+								ارسال
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="wrap-contact100" dir='rtl'>
+            <form class="contact100-form validate-form" action="https://185.83.114.129:8086/rest/jet/ict/team/score" method="POST" enctype="multipart/form-data">
+    				<span class="contact100-form-title">
+    					دریافت امتیازات
+    				</span>
+
+                <div class="wrap-input100 validate-input" data-validate="نام کاربری ضروری است">
+                    <span class="label-input100">نام کاربری</span>
+                    <input class="input100" type="text" name="username" placeholder="نام کاربری را وارد نمایید">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="رمز عبور ضروری است">
+                    <span class="label-input100">رمز عبور</span>
+                    <input class="input100" type="password" name="password" placeholder="رمز عبور را وارد نمایید">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <div class="wrap-contact100-form-btn">
+                        <div class="contact100-form-bgbtn"></div>
+                        <button class="contact100-form-btn">
+    							<span>
+    								ارسال
+    								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+    							</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+  </body>
+</html>
